@@ -1,23 +1,95 @@
+
+/* General webpage styling */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #f0f4f8;
+
+    /* CSS Grid for the three required sections */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "info"
+        "puzzle"
+        "date";
+    gap: 20px;
+}
+
+/* Section 1: Personal information */
+.info {
+    grid-area: info;
+    padding: 20px;
+    text-align: center;
+    background-color: #dceafa;
+    border-radius: 10px;
+}
+
+/* Section 2: Puzzle area */
+.puzzle-section {
+    grid-area: puzzle;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Flexbox arranges the four columns */
 .puzzle {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 800px;
-  margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
+/* Each column stacks four pieces vertically */
 .column {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 0;
 }
 
-.column img {
-  display: block;
-  width: 100%;
-  height: auto;
+/* Puzzle image sizing */
+.puzzle-piece {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
+/* Hide the incorrect puzzle piece */
 .imposter {
-  display: none;
+    display: none;
+}
+
+/* Section 3: Assignment date */
+.date {
+    grid-area: date;
+    padding: 20px;
+    text-align: center;
+    background-color: #dff2e1;
+    border-radius: 10px;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .puzzle-section {
+        padding: 8px;
+    }
+
+    .info,
+    .date {
+        padding: 15px;
+    }
 }
