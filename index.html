@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid & Flexbox Puzzle</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flexbox Puzzle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="puzzle">
-  <div class="column">
-    <img src="images/1G.jpg" alt="Puzzle piece 1G">
-    <img src="images/1P.jpg" alt="Puzzle piece 1P">
-    <img src="images/1E.jpg" alt="Puzzle piece 1E">
-    <img src="images/1F.jpg" alt="Puzzle piece 1F">
-  </div>
+    <!-- Section 1: Personal Information -->
+    <header class="info">
+        <h1>My Flexbox Puzzle Project</h1>
+        <p>Name: Joseph Davila </p>
+        <p>Puzzle Choice: Butterflies</p>
+    </header>
 
-  <div class="column">
-    <img src="images/1A.jpg" alt="Puzzle piece 1A">
-    <img src="images/1B.jpg" alt="Puzzle piece 1B">
-    <img src="images/1N.jpg" alt="Puzzle piece 1N">
-    <img src="images/1L.jpg" alt="Puzzle piece 1L">
-  </div>
+    <!-- Section 2: Puzzle -->
+    <main class="puzzle-section">
+        <h2>My Completed Puzzle</h2>
 
-  <div class="column">
-    <img src="images/1J.jpg" alt="Puzzle piece 1J">
-    <img src="images/1H.jpg" alt="Puzzle piece 1H">
-    <img src="images/1C.jpg" alt="Puzzle piece 1C">
-    <img src="images/1K.jpg" alt="Puzzle piece 1K">
-  </div>
+        <div class="puzzle">
 
-  <div class="column">
-    <img src="images/1Q.jpg" alt="Puzzle piece 1Q">
-    <img src="images/1M.jpg" alt="Puzzle piece 1M">
-    <img src="images/1O.jpg" alt="Puzzle piece 1O">
-    <img src="images/1I.jpg" alt="Puzzle piece 1I">
-  </div>
+            <!-- Column 1 -->
+            <div class="column">
+                <img src="puzzle1_G.jpg" alt="Puzzle Piece G" class="puzzle-piece">
+                <img src="puzzle1_P.jpg" alt="Puzzle Piece P" class="puzzle-piece">
+                <img src="puzzle1_E.jpg" alt="Puzzle Piece E" class="puzzle-piece">
+                <img src="puzzle1_F.jpg" alt="Puzzle Piece F" class="puzzle-piece">
+            </div>
 
-  <img class="imposter" src="images/1D.jpg"
-       alt="Extra puzzle piece">
-</div>
+            <!-- Column 2 -->
+            <div class="column">
+                <img src="puzzle1_A.jpg" alt="Puzzle Piece A" class="puzzle-piece">
+                <img src="puzzle1_B.jpg" alt="Puzzle Piece B" class="puzzle-piece">
+                <img src="puzzle1_N.jpg" alt="Puzzle Piece N" class="puzzle-piece">
+                <img src="puzzle1_L.jpg" alt="Puzzle Piece L" class="puzzle-piece">
+            </div>
+
+            <!-- Column 3 -->
+            <div class="column">
+                <img src="puzzle1_J.jpg" alt="Puzzle Piece J" class="puzzle-piece">
+                <img src="puzzle1_H.jpg" alt="Puzzle Piece H" class="puzzle-piece">
+                <img src="puzzle1_C.jpg" alt="Puzzle Piece C" class="puzzle-piece">
+                <img src="puzzle1_K.jpg" alt="Puzzle Piece K" class="puzzle-piece">
+            </div>
+
+            <!-- Column 4 -->
+            <div class="column">
+                <img src="puzzle1_Q.jpg" alt="Puzzle Piece Q" class="puzzle-piece">
+                <img src="puzzle1_M.jpg" alt="Puzzle Piece M" class="puzzle-piece">
+                <img src="puzzle1_O.jpg" alt="Puzzle Piece O" class="puzzle-piece">
+                <img src="puzzle1_I.jpg" alt="Puzzle Piece I" class="puzzle-piece">
+            </div>
+
+            <!-- Extra puzzle piece: hidden -->
+            <img src="puzzle1_D.jpg"
+                 alt="Extra puzzle piece"
+                 class="puzzle-piece imposter">
+
+        </div>
     </main>
 
-    <!-- Section 3: Footer / Date -->
-    <footer class="grid-section footer">
-      <p>Completion Date: <span id="date">October 19, 2026</span></p>
+    <!-- Section 3: Assignment Date -->
+    <footer class="date">
+        <h2>Assignment Completion Date</h2>
+        <p>October 20, 2026</p>
     </footer>
-
-  </div>
 
 </body>
 </html>
