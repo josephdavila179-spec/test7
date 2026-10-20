@@ -1,0 +1,23 @@
+.puzzle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.column img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imposter {
+  display: none;
+}
